@@ -22,6 +22,11 @@ public class InteractablePanel : MonoBehaviour
         if (interactionCount == 1 && isAntennaConnected) SecondInteraction.Invoke();
     }
 
+    public void resetCount()
+    {
+        interactionCount = 0;
+    }
+
     public void antennaConnected()
     {
         isAntennaConnected = true;

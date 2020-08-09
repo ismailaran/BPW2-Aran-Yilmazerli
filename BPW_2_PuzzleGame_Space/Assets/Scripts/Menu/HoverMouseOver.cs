@@ -9,6 +9,11 @@ public class HoverMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerClick
     public UnityEvent mouseHover;
     public UnityEvent ConfirmSelection;
 
+    void Start()
+    {
+        Cursor.visible = true;
+    }
+
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
         mouseHover.Invoke();
